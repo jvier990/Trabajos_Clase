@@ -20,14 +20,15 @@ class _CounterState extends State<Counter> {
               style:
                   const TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
             ),
-            const Text('Clickcitos (y)', style: TextStyle(fontSize: 60)),
+            Text(countador > 1 ? 'Clicks' : 'Click',
+                style: TextStyle(fontSize: 60)),
             Image.network(
                 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTUyMWEzcWlpZ3dlcG85ZnVmdGw3OTA1em5vemZhMmx1YjNjeDdoMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/23xN9cYQSKwFy/giphy.gif')
           ],
         ),
       ),
       floatingActionButton: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           FloatingActionButton(
@@ -54,15 +55,6 @@ class _CounterState extends State<Counter> {
           const SizedBox(
             height: 18,
           ),
-          FloatingActionButton(
-              onPressed: () {
-                setState(() {
-                  if (countador > 100) {
-                    countador = countador * countador;
-                  }
-                });
-              },
-              child: const Icon(Icons.add_circle)),
         ],
       ),
     );
