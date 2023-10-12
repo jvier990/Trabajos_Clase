@@ -20,7 +20,7 @@ class _CounterState extends State<Counter> {
               style:
                   const TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
             ),
-            Text(countador > 1 ? 'Clicks' : 'Click',
+            Text(countador > 1 ? 'Clicks ' : 'Click',
                 style: TextStyle(fontSize: 60)),
             Image.network(
                 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTUyMWEzcWlpZ3dlcG85ZnVmdGw3OTA1em5vemZhMmx1YjNjeDdoMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/23xN9cYQSKwFy/giphy.gif')
